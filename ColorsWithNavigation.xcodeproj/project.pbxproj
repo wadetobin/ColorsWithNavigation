@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		387D5AC01FA38F9200D69ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5ABF1FA38F9200D69ECA /* AppDelegate.swift */; };
-		387D5AC21FA38F9200D69ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AC11FA38F9200D69ECA /* ViewController.swift */; };
 		387D5AC51FA38F9200D69ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387D5AC31FA38F9200D69ECA /* Main.storyboard */; };
-		387D5AC81FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AC61FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodeld */; };
 		387D5ACA1FA38F9200D69ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387D5AC91FA38F9200D69ECA /* Assets.xcassets */; };
 		387D5ACD1FA38F9200D69ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387D5ACB1FA38F9200D69ECA /* LaunchScreen.storyboard */; };
 		387D5AD81FA38F9200D69ECA /* ColorsWithNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AD71FA38F9200D69ECA /* ColorsWithNavigationTests.swift */; };
 		387D5AE31FA38F9200D69ECA /* ColorsWithNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AE21FA38F9200D69ECA /* ColorsWithNavigationUITests.swift */; };
+		387D5AF11FA3920700D69ECA /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AF01FA3920700D69ECA /* ColorsViewController.swift */; };
+		387D5AF31FA396E000D69ECA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AF21FA396E000D69ECA /* Color.swift */; };
+		387D5AF51FA3C98100D69ECA /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D5AF41FA3C98100D69ECA /* ColorDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,7 @@
 /* Begin PBXFileReference section */
 		387D5ABC1FA38F9200D69ECA /* ColorsWithNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorsWithNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387D5ABF1FA38F9200D69ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		387D5AC11FA38F9200D69ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		387D5AC41FA38F9200D69ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		387D5AC71FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorsWithNavigation.xcdatamodel; sourceTree = "<group>"; };
 		387D5AC91FA38F9200D69ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387D5ACC1FA38F9200D69ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387D5ACE1FA38F9200D69ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		387D5ADE1FA38F9200D69ECA /* ColorsWithNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsWithNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		387D5AE21FA38F9200D69ECA /* ColorsWithNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWithNavigationUITests.swift; sourceTree = "<group>"; };
 		387D5AE41FA38F9200D69ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387D5AF01FA3920700D69ECA /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		387D5AF21FA396E000D69ECA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		387D5AF41FA3C98100D69ECA /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				387D5ABF1FA38F9200D69ECA /* AppDelegate.swift */,
-				387D5AC11FA38F9200D69ECA /* ViewController.swift */,
 				387D5AC31FA38F9200D69ECA /* Main.storyboard */,
+				387D5AF01FA3920700D69ECA /* ColorsViewController.swift */,
 				387D5AC91FA38F9200D69ECA /* Assets.xcassets */,
 				387D5ACB1FA38F9200D69ECA /* LaunchScreen.storyboard */,
 				387D5ACE1FA38F9200D69ECA /* Info.plist */,
-				387D5AC61FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodeld */,
+				387D5AF21FA396E000D69ECA /* Color.swift */,
+				387D5AF41FA3C98100D69ECA /* ColorDetailViewController.swift */,
 			);
 			path = ColorsWithNavigation;
 			sourceTree = "<group>";
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387D5AC81FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodeld in Sources */,
-				387D5AC21FA38F9200D69ECA /* ViewController.swift in Sources */,
+				387D5AF31FA396E000D69ECA /* Color.swift in Sources */,
+				387D5AF11FA3920700D69ECA /* ColorsViewController.swift in Sources */,
 				387D5AC01FA38F9200D69ECA /* AppDelegate.swift in Sources */,
+				387D5AF51FA3C98100D69ECA /* ColorDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,19 +560,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		387D5AC61FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				387D5AC71FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodel */,
-			);
-			currentVersion = 387D5AC71FA38F9200D69ECA /* ColorsWithNavigation.xcdatamodel */;
-			path = ColorsWithNavigation.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 387D5AB41FA38F9200D69ECA /* Project object */;
 }
